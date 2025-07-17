@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #15032d;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    padding: 25px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #51236f;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    font-family: "Manjari", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #d9d7da;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.menu__desktop {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+header a:hover {
+    color: #c461e2;
+    transform: scale(1.05);
+}
+
+.logo a {
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+button{
+    padding: 10px 40px;
+    background-color: #c461e2;
+    color: #ffff;
+    border-radius: 30px;
+    text-shadow: 0 0 2px #00000070;
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px rgb(225, 125, 236);
+}
+
+/* TOPO */
+
+section .interface {
+    padding: 140px 50px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.txt__topo {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.txt__topo h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 120px;
+    line-height: 100px;
+}
+
+.txt__topo .texto__estudante{
+    font-family: "Manjari", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #d9d7da;
+    margin: 10px 0px;
+}
+
+.txt__topo .texto__estudante span {
+    color: #c461e2;
+}
+
+.txt__topo .texto__descricao {
+    font-family: "Manjari", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #d9d7da;
+    margin: 30px 0px;
+    width: 650px;
+}
+
+.txt__topo span {
+    color: #ffff;
+}
+
+.btns__redes {
+    display: flex;
+    gap: 12px;
+}
+
+.topo button {
+    transition: .2s;
+}
+
+.topo button:hover {
+    box-shadow: 0px 0px 8px rgb(225, 125, 236);
+    transform: scale(1.05);
+}
+
+/* SOBRE MIM */
+
+section .sobre__mim {
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre__mim .interface {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 50px 50px 50px 50px;
+}
+
+h2 {
+    color: #d9d7da;
+    margin-bottom: 30px;
+}
+
+.sobre__mim .elementos__sobre__mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 31px;
+    animation: aparecer linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.img__sobre__mim {
+    height: 490px;
+    text-align: center;
+}
+
+.sobre__mim img {
+    width: 490px;
+    border-radius: 20px;
+}
+
+.img__sobre__mim p {
+    font-family: "Manjari", sans-serif;
+    font-weight: 400;
+    color: #d9d7da8d;
+    font-size: 15px;
+}
+
+.sobre__mim .txt__sobre__mim {
+    color: #ffffffb9;
+    font-family: "Manjari", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: justify;
+    width: 700px;
+    box-shadow: 0 0 8px rgba(225, 125, 236, 0.479);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.sobre__mim .txt__sobre__mim span {
+    color:#c461e2;
+}
+
+/*COMPETENCIAS*/
+
+section .competencias {
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.competencias .interface {
+    color: #ffff;
+    padding: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.titulo__sessao{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.titulo__sessao span{
+    color:rgb(225, 125, 236);
+}
+
+.competencias h4{
+    font-size: 25px;
+}
+
+.boxes__competencias {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: column;
+    animation: aparecer linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.box__competencia {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    font-family: "Manjari", sans-serif;
+    font-weight: 400;
+    border-radius: 20%;
+    cursor: default;
+    transition: 0.5s;
+}
+
+.box__competencia i {
+    font-size: 40px;
+    color:rgb(78, 0, 87);
+}
+
+.html_css_js {
+    display: flex;
+    gap: 15px;
+}
+
+.py_java_sql {
+    display: flex;
+    gap:15px;
+}
+
+.box__competencia:hover{
+    box-shadow: 0 0 20px rgba(225, 125, 236, 0.432);
+    transform: scale(1.05);
+}
+
+.box__competencia:hover .fa-html5{
+    color:#F16524;
+}
+
+.box__competencia:hover .fa-css3-alt{
+    color: #0085C6;
+}
+
+.box__competencia:hover .fa-js{
+    color: #F8DC3D;
+}
+
+.box__competencia .python__icons {
+    position: relative;
+    width: 50px; 
+    height: 50px;
+}
+
+.python__icons .fa-python,
+.python__icons img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+} 
+
+.python__icons img {
+    opacity: 0;
+    transform: translateY(-5px);
+}
+
+.box__competencia:hover .fa-python{
+    color: #3771A1;
+    opacity: 0;
+}
+
+.box__competencia:hover .img__python{
+    opacity: 1;
+}
+
+.box__competencia:hover .fa-java{
+    color: #EB2025;
+}
+
+.box__competencia:hover .fa-database{
+    color: #00558B;
+}
+
+.box__competencia i{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* PROJETOS */
+
+section .projetos {
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos .interface {
+    color: #ffff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 50px 50px 50px 50px;
+}
+
+
+.boxes__projetos {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    gap: 50px;
+}
+
+.box__projeto1, .box__projeto2, .box__projeto3 {
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 0 8px rgba(225, 125, 236, 0.479);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.projetos .fa-html5 {
+    color: #F16524;
+}
+
+.projetos .fa-css3-alt {
+    color: #0085C6;
+}
+
+.projetos .fa-js {
+    color: #F8DC3D;
+}
+
+
+.titulo__projeto {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.descricao__projeto {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.img__projeto img {
+    height: 250px;
+}
+
+.linguagens__projeto i {
+    font-size: 30px;
+}
+
+.txt-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.txt__projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.txt__projeto2 {
+    text-align: right;
+}
+
+/* CERTIFICADOS */
+
+section .certificados {
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificados .interface {
+    color: #ffff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 100px;
+    padding: 50px 50px 50px 50px;
+}
+
+.certificados p {
+    font-family: "Manjari", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.certificados p span {
+    color: #c461e2;
+}
+
+.imagens__certificados {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    gap: 7px;
+}
+
+.imagens__certificados img {
+    width: 320px;
+    border-radius: 5px;
+    transition: .2s
+}
+
+.imagens__certificados img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #c461e2;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #51236f;
+    padding: 25px 3%;
+}
+
+footer .interface {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+footer .logo a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #c461e2;
+    transform: scale(1.05);
+}
+
+.email_footer {
+    font-family: "Manjari", sans-serif;
+    font-weight: 400;
+    display: flex;
+    gap: 5px;
+}
+
+.email_footer p {
+    color: #d9d7da;
+    font-size: 20px;
+}
+
+.email_footer i {
+    color:#c461e2;
+}
+
+/* KEYFRAMES */
+
+@keyframes sombra {
+    0% {
+        box-shadow: 0 0 0;
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(225, 125, 236, 0.623);
+    }
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        scale: 0.5;
+    } 
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes aparecer-esquerda {
+    0% {
+        opacity: 0;
+        scale: 0.5;
+
+    } 
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
