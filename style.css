@@ -375,12 +375,28 @@ section .projetos {
     gap: 50px;
 }
 
+.box__projeto1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(225, 125, 236, 0.432);
+}
+
+.box__projeto2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(225, 125, 236, 0.432);
+}
+
+.box__projeto3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(225, 125, 236, 0.432);
+}
+
 .box__projeto1, .box__projeto2, .box__projeto3 {
     display: flex;
     gap: 40px;
     box-shadow: 0 0 8px rgba(225, 125, 236, 0.479);
     border-radius: 20px;
     padding: 20px;
+    transition: 0.5s;
 }
 
 .projetos .fa-html5 {
